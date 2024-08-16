@@ -1,0 +1,29 @@
+pip3 install [package name]
+pip3 install --upgrade pip3
+pip3 install [package name] == version // to install specific version
+
+Virtual Environment:
+Virtual Environment for each application 
+python3 -m venv env    //for creating virtual Environment
+virtual directory is an isolated environment in which we have specific python interpreter and other package
+that application need.
+
+Method 01 to create python virtual environment for cmd
+python3 -m venv venv
+cd venv/Scripts/activate
+
+
+modern way: 
+pipenv (dependencies manager for python projects) = npm (js)
+pipenv --venv
+pipenv shell to activate virtual environment
+exit to deactivate
+
+when we copy project from development machine to other package dependcies diiffer so tu use 
+same version of development machine command[pipenv install --ignore-pipfile]
+it install dependcies from piplock.
+usefull commands:
+
+pipenv graph = to show dependencies
+pipenv update -- outdated = update
+python -m pydoc math = for documentation
